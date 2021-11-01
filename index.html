@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reto 3 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+
+</head>
+
+<body>
+<h1> Reto4</h1>
+
+<h2> Categorias</h2>
+<div id="resultadoCategorias"></div>
+<button onclick="traerInformacionCategorias()"> Consultar </button>
+
+<div>
+    <input type="number" id="idCategoria" placeholder="id" required>
+    <input type="text" id="nameCategoria" placeholder="name" required>
+    <input type="text" id="descriptionCategoria" placeholder="description" required>  
+</div>
+
+<button onclick="guardarInformacionCategorias()">Guardar!</button>
+
+<h2> Botes</h2>
+<div id="resultadoBotes"></div>
+<button onclick="traerInformacionBotes()"> Consultar </button>
+
+<div>
+    <input type="number" id="id" placeholder="id">
+    <input type="text" id="name" placeholder="name">
+    <input type="text" id="brand" placeholder="brand">
+    <input type="number" id="year" placeholder="year">
+    <input type="text" id="description" placeholder="description">
+
+</div>
+
+<button onclick="guardarInformacionBotes()">Guardar!</button>
+
+
+<h2> Clientes</h2>
+<div id="resultadoClientes"></div>
+<button onclick="traerInformacionClientes()"> Consultar </button>
+
+<div>
+    <input type="number" id="idCliente" placeholder="id">
+    <input type="text" id="email" placeholder="email">
+    <input type="text" id="password" placeholder="password">
+    <input type="text" id="nameCliente" placeholder="name"> 
+    <input type="number" id="age" placeholder="age">
+</div>
+
+<button onclick="guardarInformacionClientes()">Guardar!</button>
+
+
+<h2> Mensajes</h2>
+<div id="resultadoMensajes"></div>
+<button onclick="traerInformacionMensajes()"> Consultar </button>
+
+<div>
+    <input type="number" id="idMensajes" placeholder="id">
+    <input type="text" id="messagetext" placeholder="messageText">
+</div>
+
+<button onclick="guardarInformacionMensajes()">Guardar!</button>
+
+</body>
+
+<h2> Reservaciones</h2>
+<div id="resultadoReservaciones"></div>
+<button onclick="traerInformacionReservaciones()"> Consultar </button>
+
+<div>
+    <input type="number" id="idReservacion" placeholder="id">
+    <input type="text" id="startDate" placeholder="startDate">
+    <input type="text" id="devolutionDate" placeholder="devolutionDate">
+    <input type="number" id="status" placeholder="status">
+</div>
+
+<button onclick="guardarInformacionReservaciones()">Guardar!</button>
+
+</body>
+
+
+</html>
