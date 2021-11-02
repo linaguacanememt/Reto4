@@ -1,6 +1,7 @@
-function traerInformacionCategorias(){
+unction traerInformacionCategorias(){
     $.ajax({
-        url:"http://129.151.125.42:80/api/Category/all",
+        //url:"http://129.151.125.42:80/api/Category/all",
+        url:"http://localhost:80/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -12,7 +13,8 @@ function traerInformacionCategorias(){
 
 function traerInformacionBotes(){
     $.ajax({
-        url:"http://129.151.125.42:80/api/Boat/all",
+        //url:"http://129.151.125.42:80/api/Boat/all",
+        url:"http://localhost:80/api/Boat/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -24,7 +26,8 @@ function traerInformacionBotes(){
 
 function traerInformacionClientes(){
     $.ajax({
-        url:"http://129.151.125.42:80/api/Client/all",
+        //url:"http://129.151.125.42:80/api/Client/all",
+        url:"http://localhost:80/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -36,7 +39,8 @@ function traerInformacionClientes(){
 
 function traerInformacionMensajes(){
     $.ajax({
-        url:"http://129.151.125.42:80/api/Message/all",
+        //url:"http://129.151.125.42:80/api/Message/all",
+        url:"http://localhost:80/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -48,7 +52,8 @@ function traerInformacionMensajes(){
 
 function traerInformacionReservaciones(){
     $.ajax({
-        url:"http://129.151.125.42:80/api/Reservation/all",
+        //url:"http://129.151.125.42:80/api/Reservation/all",
+        url:"http://localhost:80/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -149,7 +154,8 @@ function guardarInformacionCategorias(){
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://129.151.125.42:80/api/Category/save",
+                //url:"http://129.151.125.42:80/api/Category/save",
+                url:"http://localhost:80/api/Category/save",
                 success:function(response) {
                     console.log(response);
                     console.log("Se guardo correctamente");
@@ -184,7 +190,8 @@ function guardarInformacionBotes(){
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://129.151.125.42:80/api/Boat/save",
+                //url:"http://129.151.125.42:80/api/Boat/save",
+                url:"http://localhost:80/api/Boat/save",
                 success:function(response) {
                     console.log(response);
                     console.log("Se guardo correctamente");
@@ -219,7 +226,8 @@ function guardarInformacionClientes(){
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://129.151.125.42:80/api/Client/save",
+                //url:"http://129.151.125.42:80/api/Client/save",
+                url:"http://localhost:80/api/Client/save",
                 success:function(response) {
                     console.log(response);
                     console.log("Se guardo correctamente");
@@ -248,7 +256,8 @@ function guardarInformacionMensajes(){
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://129.151.125.42:80/api/Message/save",
+                //url:"http://129.151.125.42:80/api/Message/save",
+                url:"http://localhost:80/api/Message/save",
                 success:function(response) {
                     console.log(response);
                     console.log("Se guardo correctamente");
@@ -281,7 +290,8 @@ function guardarInformacionReservaciones(){
                 contentType: "application/json; charset=utf-8",
                 dataType: 'JSON',
                 data: JSON.stringify(var2),
-                url:"http://129.151.125.42:80/api/Reservation/save",
+                //url:"http://129.151.125.42:80/api/Reservation/save",
+                url:"http://localhost:80/api/Reservation/save",
                 success:function(response) {
                     console.log(response);
                     console.log("Se guardo correctamente");
@@ -312,7 +322,8 @@ function actualizarInformacionCategorias(idElemento){
             console.log(myData);
             let dataToSend=JSON.stringify(myData);
             $.ajax({
-                url:"http://129.151.125.42:80/api/Category/update",
+                //url:"http://129.151.125.42:80/api/Category/update",
+                url:"http://localhost:80/api/Category/update",
                 type:"PUT",
                 data:dataToSend,
                 contentType:"application/JSON",
@@ -348,7 +359,8 @@ function actualizarInformacionBotes(idElemento){
             console.log(myData);
             let dataToSend=JSON.stringify(myData);
             $.ajax({
-                url:"http://129.151.125.42:80/api/Boat/update",}
+                //url:"http://129.151.125.42:80/api/Boat/update",}
+                url:"http://localhost:80/api/Boat/update",
                 type:"PUT",
                 data:dataToSend,
                 contentType:"application/JSON",
@@ -386,7 +398,8 @@ function actualizarInformacionClientes(idElemento){
             console.log(myData);
             let dataToSend=JSON.stringify(myData);
             $.ajax({
-                url:"http://129.151.125.42:80/api/Client/update",
+                //url:"http://129.151.125.42:80/api/Client/update",
+                url:"http://localhost:80/api/Client/update",
                 type:"PUT",
                 data:dataToSend,
                 contentType:"application/JSON",
@@ -418,7 +431,8 @@ function actualizarInformacionMensajes(idElemento){
             console.log(myData);
             let dataToSend=JSON.stringify(myData);
             $.ajax({
-                url:"http://129.151.125.42:80/api/Message/update",
+                //url:"http://129.151.125.42:80/api/Message/update",
+                url:"http://localhost:80/api/Message/update",
                 type:"PUT",
                 data:dataToSend,
                 contentType:"application/JSON",
@@ -451,7 +465,8 @@ function actualizarInformacionReservaciones(idElemento){
             console.log(myData);
             let dataToSend=JSON.stringify(myData);
             $.ajax({
-                url:"http://129.151.125.42:80/api/Reservation/update",
+                //url:"http://129.151.125.42:80/api/Reservation/update",
+                url:"http://localhost:80/api/Reservation/update",
                 type:"PUT",
                 data:dataToSend,
                 contentType:"application/JSON",
@@ -478,7 +493,8 @@ function borrarElementoCategoria(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://129.151.125.42:80/api/Category/"+idElemento,
+        //url:"http://129.151.125.42:80/api/Category/"+idElemento,
+        url:"http://localhost:80/api/Category/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -497,7 +513,8 @@ function borrarElementoBote(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://129.151.125.42:80/api/Boat/"+idElemento,
+        //url:"http://129.151.125.42:80/api/Boat/"+idElemento,
+        url:"http://localhost:80/api/Boat/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -516,7 +533,8 @@ function borrarElementoCliente(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://129.151.125.42:80/api/Client/"+idElemento,
+        //url:"http://129.151.125.42:80/api/Client/"+idElemento,
+        url:"http://localhost:80/api/Client/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -535,7 +553,8 @@ function borrarElementoMensaje(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://129.151.125.42:80/api/Message/"+idElemento,
+        //url:"http://129.151.125.42:80/api/Message/"+idElemento,
+        url:"http://localhost:80/api/Message/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
@@ -555,7 +574,8 @@ function borrarElementoReservacion(idElemento){
     };
     let dataToSend=JSON.stringify(myData);
     $.ajax({
-        url:"http://129.151.125.42:80/api/Reservation/"+idElemento,
+        //url:"http://129.151.125.42:80/api/Reservation/"+idElemento,
+        url:"http://localhost:80/api/Reservation/"+idElemento,
         type:"DELETE",
         data:dataToSend,
         contentType:"application/JSON",
